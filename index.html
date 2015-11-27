@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+		<style>
+
+			html, body {
+				height: 100%;
+			}
+			
+			body {
+				background: white;
+				margin: 0; padding: 0;
+				color: #555;
+				font-family: Open Sans, sans-serif;
+				font-size: 1.1em;
+				margin-bottom: 120px;
+			}
+
+			h1, h2, h3, h4, h5, h6 {
+				font-family: Oswald, sans-serif;
+				font-weight: 300;
+				text-transform: uppercase;
+				letter-spacing: .1em;
+				cursor: default;
+			}
+			h1 {
+				font-size: 2.5em;
+			}
+			h1 {
+				font-size: 2em;
+			}
+
+			section {
+				margin-bottom: 150px;
+			}
+
+			.content {
+				max-width: 500px;
+				margin: 0 auto;
+				text-align: center;
+				position: relative;
+			}
+
+			.logo-holder {
+				position: relative;
+				width: 100%; height: 100%;
+				min-height: 350px;
+			}
+
+			.logo {
+				position: absolute;
+				top: 50%; left: 50%;
+				width: 300px;
+
+				-webkit-transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				-o-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+			.logo h1 {
+				position: absolute;
+				display: block;
+				margin-top: 50px;
+				width: 100%;
+				text-align: center;
+				
+				z-index: 1;
+				cursor: default;
+				user-select: none;
+			}
+			.logo img {
+				position: absolute;
+				margin-top: -180px;
+				height: 280px;
+				opacity: .8;
+				-webkit-transform: scaleX(-1) rotate(150deg);
+				-moz-transform: scaleX(-1) rotate(150deg);
+				-ms-transform: scaleX(-1) rotate(150deg);
+				-o-transform: scaleX(-1) rotate(150deg);
+				transform: scaleX(-1) rotate(150deg);
+
+				-webkit-animation: spin 20s both linear;
+				-o-animation: spin 20s both linear;
+				animation: spin 20s both linear;
+				
+				-webkit-animation-iteration-count: infinite;
+				-o-animation-iteration-count: infinite;
+				animation-iteration-count: infinite;
+			}
+
+			.item {
+				text-decoration: none;
+				color: #555;
+				display: block;
+				overflow: hidden;
+				margin-bottom: 40px;
+			}
+
+			.item p {
+				line-height: 1.5em;
+
+			}
+
+			.item .img {
+				position: relative;
+				border-radius: 50%;
+				overflow: hidden;
+				width: 180px; height: 180px;
+				margin: 0 auto;
+				border: 1px solid rgba(0,0,0, .2);
+				opacity: .8;
+			}
+
+			.item .img img {
+				height: 100%;
+				position: absolute;
+				left: 50%; top: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				-o-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+
+			@-moz-keyframes spin {
+				from { -moz-transform: scaleX(-1) rotate(360deg); }
+				to { -moz-transform: scaleX(-1) rotate(0deg); }
+			}
+			@-webkit-keyframes spin {
+				from { -webkit-transform: scaleX(-1) rotate(360deg); }
+				to { -webkit-transform: scaleX(-1) rotate(0deg); }
+			}
+			@keyframes spin {
+				from {transform: scaleX(-1) rotate(360deg);}
+				to {transform: scaleX(-1) rotate(0deg);}
+			}
+
+		</style>
+	</head>
+	<body>
+
+				
+		<div class="logo-holder">
+			<div class="logo">
+				<img src="http://i.imgur.com/tme67iN.jpg">
+				<h1>posit labs</h1>
+			</div>
+		</div>
+
+		<div class="content">
+
+			<section>
+
+				<h1>Products</h1>
+				
+				<a class="item" href="http://lightpaintlive.com" target="_blank">
+					<h2>lightpaint live</h2>
+					<div class="img">
+						<img src="imgs/mercury.png">
+					</div>
+					<p>Real-time light painting apps.</p>
+				</a>
+
+			</section>
+
+			<section>
+				
+				<h1>Experiments</h1>
+				
+				<a class="item" href="http://positlabs.github.io/chromavore" target="_blank">
+					<h2>Chromavore</h2>
+					<div class="img">
+						<img src="http://i.imgur.com/42guVtRm.png">
+					</div>
+					<p>Accumulative video painting tool.</p>
+				</a>
+				
+				<a class="item" href="http://positlabs.github.io/temporalis" target="_blank">
+					<h2>Temporalis</h2>
+					<div class="img">
+						<img src="imgs/temporalis.png">
+					</div>
+					<p>Slit-scan webcam effect.</p>
+				</a>
+
+			</section>
+
+			<section>
+				
+				<h1>Websites</h1>
+
+				<a class="item" href="http://cryptarismission.com" target="_blank">
+					<h2>Cryptaris</h2>
+					<div class="img">
+						<img src="imgs/cryptaris.jpg">
+					</div>
+					<p>An unknown threat is detected and the US Army needs you. Decipher the clues, complete the mission and prove yourself.</p>
+				</a>
+
+			</section>
+			
+		</div>
+
+		
+	</body>
+</html>
